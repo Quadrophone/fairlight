@@ -1,7 +1,7 @@
 Fairlight Theme
 ===================
-##A clean, simple blogging theme for Wordpress. May remind you of a certain ubercool essayist site.
-###Very much a WIP. Use at your own risk. 
+A clean, simple blogging theme for Wordpress. May remind you of a certain ubercool essayist site.
+####Very much a WIP. Use at your own risk. 
 ![ScreenShot](screenshot.png)
 ###Instructions
 * Install the theme in WordPress as usual
@@ -9,7 +9,7 @@ Fairlight Theme
 * Activate the theme
 
 ###Issues
-* Needs lots of code optimization still
+* Lots of code optimization and cleanup
 
 ###Planned improvements
 * Better sitewide search
