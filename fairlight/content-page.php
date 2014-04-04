@@ -5,7 +5,9 @@
  * @package Fairlight
  */
 ?>
-
+<div class="content-area">
+	<main id="main" class="site-main" role="main">
+		<div class="small-12 large-6 columns small-centered articles">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
@@ -20,5 +22,7 @@
 			) );
 		?>
 	</div><!-- .entry-content -->
-	<?php edit_post_link( __( 'Edit', 'fairlight' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
-</article><!-- #post-## -->
+</article>
+</div>
+</main>
+</div>

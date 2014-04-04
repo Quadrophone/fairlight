@@ -12,7 +12,10 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 <div class="post large-6 small-12 small-centered row">
 		<?php while ( have_posts() ) : the_post(); ?>
-
+<div class="now-reading">
+<h2><?php echo the_title(); ?></h2>
+<div class="progress"></div>
+</div>
 			<?php get_template_part( 'content', 'single' ); ?>
 <div class="sharing">
 <h4>Share this article</h4>

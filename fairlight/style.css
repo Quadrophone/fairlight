@@ -2823,13 +2823,8 @@ a.search, a.nav-menu {
   font-size: 1.4em;
   display: block;
   padding: 10px 15px;
-  z-index: 9999; }
-
-a.search {
+  z-index: 9999;
   right: 20px; }
-
-a.nav-menu {
-  left: 20px; }
 
 @media screen and (max-width: 768px) {
   a.nav-menu {
@@ -2905,14 +2900,47 @@ div.article {
     .post-excerpt .post-categories li:last-child::after {
       content: ''; }
 
-.search_result {
-  display: inline-block;
-  height: auto;
-  float: none;
-  padding-top: 3em;
-  clear: both;
-  width: 100%; }
+#dwls_search_results::after {
+  content: '';
+  display: table;
+  width: 100%;
+  clear: both; }
 
+#dwls_search_results {
+  width: 45%;
+  margin: 0 auto; }
+  #dwls_search_results h3 {
+    text-align: center; }
+  @media screen and (max-width: 939px) {
+    #dwls_search_results {
+      width: 90%; } }
+  #dwls_search_results img {
+    float: left; }
+    @media screen and (max-width: 600px) {
+      #dwls_search_results img {
+        clear: both;
+        display: block;
+        float: none;
+        margin: 0 auto; } }
+  #dwls_search_results p {
+    width: 100%; }
+  #dwls_search_results p.meta {
+    display: inline-block;
+    width: auto; }
+  #dwls_search_results a {
+    margin-top: 1em;
+    display: inline-block; }
+
+@media screen and (max-width: 939px) {
+  #dwls_search_results p {
+    width: 70%; } }
+@media screen and (max-width: 600px) {
+  #dwls_search_results p {
+    width: 100%;
+    clear: both;
+    float: none;
+    margin: 1em auto 0;
+    padding-left: 10px; } }
 .article-img, .post_thumb {
   height: 100px;
   position: relative;
@@ -2988,6 +3016,29 @@ p.daves-wordpress-live-search_date {
   display: inline; }
 
 /* single post styles */
+.now-reading {
+  background-color: #fff;
+  display: none;
+  width: 200px;
+  position: fixed;
+  left: 3em;
+  top: 1em;
+  font-size: .8em;
+  padding: 1em;
+  border: 1px solid #aaa; }
+  .now-reading h2 {
+    position: relative;
+    z-index: 9999; }
+
+.progress {
+  background-color: #ccc;
+  height: 100%;
+  width: 0;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
 div.post {
   clear: both; }
   div.post .entry-title {
@@ -3038,7 +3089,8 @@ a.bookmark:after {
   right: -1em;
   top: 0;
   background-color: #fafafa;
-  transform: rotate(45deg); }
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg); }
 
 .comment-body {
   margin-bottom: 1em; }

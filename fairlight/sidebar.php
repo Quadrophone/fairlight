@@ -4,7 +4,7 @@
  */
 ?>
 	<div id="sidebar" class="hidden" role="complementary">
-	<a href="#" class="close-sidebar"><i class="fi-x"></i></a>
+	<a class="close-sidebar"><i class="fi-x"></i></a>
 	<h3><a href=" <?php echo home_url(); ?> "><i class="fi-home"></i>Home</a></h3>
 	<h3><i class="fi-list-thumbnails"></i>Categories</h3>
 	<ul class="categories">
