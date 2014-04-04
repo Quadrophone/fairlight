@@ -7,4 +7,6 @@ A clean, simple blogging theme for Wordpress. May remind you of a certain uberco
 * Install the required plugins (the theme will prompt you to do so)
 * Activate the theme. Start blogging!
 
+####Planned features
+* Add a few more templates (post attachments, etc)
 
