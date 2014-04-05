@@ -11,7 +11,6 @@ Text Domain: fairlight
 Domain Path: /languages/
 This theme, like WordPress, is licensed under the GPL.
 */
-@import url("http://fonts.googleapis.com/css?family=Merriweather+Sans:400,300,700,800|Fanwood+Text:400,400italic");
 meta.foundation-mq-small {
   font-family: "/only screen and (max-width: 40em)/";
   width: 0em; }
@@ -1556,6 +1555,48 @@ select {
 
   .large-block-grid-12 > li:nth-of-type(12n+1) {
     clear: both; } }
+@font-face {
+  font-family: 'Merriweather Sans';
+  src: url("fonts/merriweathersans-bold-webfont.eot");
+  src: url("fonts/merriweathersans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/merriweathersans-bold-webfont.svg#merriweather_sansbold") format("svg"), url("fonts/merriweathersans-bold-webfont.woff") format("woff"), url("fonts/merriweathersans-bold-webfont.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather Sans';
+  src: url("fonts/merriweathersans-extrabold-webfont.eot");
+  src: url("fonts/merriweathersans-extrabold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/merriweathersans-extrabold-webfont.svg#merriweather_sansextrabold") format("svg"), url("fonts/merriweathersans-extrabold-webfont.woff") format("woff"), url("fonts/merriweathersans-extrabold-webfont.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather Sans';
+  src: url("fonts/merriweathersans-light-webfont.eot");
+  src: url("fonts/merriweathersans-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/merriweathersans-light-webfont.svg#merriweather_sanslight") format("svg"), url("fonts/merriweathersans-light-webfont.woff") format("woff"), url("fonts/merriweathersans-light-webfont.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Merriweather Sans';
+  src: url("fonts/merriweathersans-regular-webfont.eot");
+  src: url("fonts/merriweathersans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/merriweathersans-regular-webfont.svg#merriweather_sansregular") format("svg"), url("fonts/merriweathersans-regular-webfont.woff") format("woff"), url("fonts/merriweathersans-regular-webfont.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Fanwood Text';
+  src: url("fonts/fanwoodtext-italic-webfont.eot");
+  src: url("fonts/fanwoodtext-italic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/fanwoodtext-italic-webfont.svg#fanwood_textitalic") format("svg"), url("fonts/fanwoodtext-italic-webfont.woff") format("woff"), url("fonts/fanwoodtext-italic-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Fanwood Text';
+  src: url("fonts/fanwoodtext-regular-webfont.eot");
+  src: url("fonts/fanwoodtext-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/fanwoodtext-regular-webfont.svg#fanwood_textregular") format("svg"), url("fonts/fanwoodtext-regular-webfont.woff") format("woff"), url("fonts/fanwoodtext-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 /* 
  * Foundation Icons v 3.0
  * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
