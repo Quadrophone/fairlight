@@ -2818,13 +2818,27 @@ ul {
 
 a.search, a.nav-menu {
   position: fixed;
-  top: 20px;
   background-color: #555;
   font-size: 1.4em;
   display: block;
-  padding: 10px 15px;
-  z-index: 9999;
-  right: 20px; }
+  z-index: 9999; }
+
+a.search {
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px; }
+
+a.nav-menu {
+  z-index: 99999;
+  top: 0;
+  right: 0;
+  padding: 4px 10px; }
+  a.nav-menu i::before {
+    font-size: 1.4em; }
+  @media screen and (max-width: 1024px) {
+    a.nav-menu {
+      top: 0;
+      right: 0; } }
 
 @media screen and (max-width: 768px) {
   a.nav-menu {
@@ -2839,13 +2853,6 @@ a.search, a.nav-menu {
     top: -15px;
     left: -11px;
     font-size: .8em; } }
-a.nav-menu {
-  padding: 15px;
-  transform: rotate(90deg); }
-
-a.nav-menu:before {
-  content: "|||"; }
-
 .slide-panel {
   margin-left: -20%;
   position: fixed;
@@ -3019,16 +3026,22 @@ p.daves-wordpress-live-search_date {
 .now-reading {
   background-color: #fff;
   display: none;
-  width: 200px;
+  width: 100%;
   position: fixed;
-  left: 3em;
-  top: 1em;
+  top: 0;
+  left: 0;
   font-size: .8em;
-  padding: 1em;
+  padding: .53em;
   border: 1px solid #aaa; }
   .now-reading h2 {
     position: relative;
     z-index: 9999; }
+  @media screen and (max-width: 1024px) {
+    .now-reading {
+      width: 100%;
+      top: 0;
+      left: 0;
+      padding: .5em 1em; } }
 
 .progress {
   background-color: #ccc;

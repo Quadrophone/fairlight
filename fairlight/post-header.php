@@ -9,8 +9,7 @@
                 <?php get_search_form(); ?>
             </aside>
 </div>
-            <a class="nav-menu">
-            </a>
+<a class="nav-menu"><i class="fi-list"></i></a>
                   <h1><?php the_title(); ?></h1>
                 <h2><?php the_field('sub_heading'); ?> </h2>
 

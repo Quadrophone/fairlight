@@ -26,8 +26,16 @@ $(document).ready(function(){
 			
 			var scroll = $(window).scrollTop() - $('.post').offset().top;
 			var progress = (scroll / articleLength) * 100;
-			console.log(progress);
 			$('.progress').css('width',progress + '%');
+			console.log(progress);
+			if (matchMedia('all and (max-width: 1024px)').matches) {
+				if (progress <= 0 || progress >= 100) {
+					$('.nav-menu').fadeIn();
+				}
+				else {
+					$('.nav-menu').fadeOut();
+				}
+			}
 		});
 	}
 
